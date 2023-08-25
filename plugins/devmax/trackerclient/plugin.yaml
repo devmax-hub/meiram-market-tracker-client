@@ -1,0 +1,6 @@
+plugin:
+    name: 'devmax.trackerclient::lang.plugin.name'
+    description: 'devmax.trackerclient::lang.plugin.description'
+    author: Devmax
+    icon: oc-icon-bullseye
+    homepage: ''
