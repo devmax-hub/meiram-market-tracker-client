@@ -17,10 +17,12 @@
 /*
 !themes/
 !plugins/
+!config/
 
 # Ignore everything in the "themes" directory
 themes/*
-
+!themes/demo/
+!/themes/.keep
 # Ignore everything in the "plugins" directory, except your own namespace
 !plugins/builder/
 !plugins/user/
