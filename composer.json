@@ -8,9 +8,9 @@
         "php": "^8.0.2",
         "october/rain": "^3.4",
         "laravel/framework": "^9.0",
-        "october/all": "^3.4",
         "rainlab/builder-plugin": "^2.0",
-        "rainlab/user-plugin": "^2.1"
+        "rainlab/user-plugin": "^2.1",
+        "october/all": "^3.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5|^9.0"
