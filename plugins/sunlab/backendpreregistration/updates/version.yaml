@@ -1,0 +1,4 @@
+1.0.1:
+    - First version of BackendPreRegistration
+    - create_additional_fields_table.php
+    - SeedRolesTable.php

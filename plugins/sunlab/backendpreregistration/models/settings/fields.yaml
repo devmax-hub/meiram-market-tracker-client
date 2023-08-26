@@ -1,0 +1,106 @@
+fields:
+    _open_registration:
+        label: sunlab.backendpreregistration::lang.settings.fields.open_registration.label
+        span: left
+        cssClass: w-sm
+        type: section
+
+    open_registration:
+        label: sunlab.backendpreregistration::lang.settings.fields.open_registration.label
+        span: left
+        cssClass: w-sm
+        type: switch
+
+    registration_open_at:
+        label: sunlab.backendpreregistration::lang.settings.fields.registration_open_at.label
+        comment: sunlab.backendpreregistration::lang.settings.fields.registration_open_at.comment
+        span: left
+        cssClass: w-sm
+        type: datepicker
+        trigger:
+            action: show
+            field: open_registration
+            condition: checked
+
+    _send_password_automatically:
+        label: sunlab.backendpreregistration::lang.settings.fields.send_password_automatically.label
+        span: left
+        cssClass: w-sm
+        type: section
+
+    send_password_automatically:
+        label: sunlab.backendpreregistration::lang.settings.fields.send_password_automatically.label
+        span: left
+        cssClass: w-sm
+        type: switch
+
+    send_password_at:
+        label: sunlab.backendpreregistration::lang.settings.fields.send_password_at.label
+        span: left
+        cssClass: w-sm
+        type: datepicker
+        trigger:
+            action: show
+            field: send_password_automatically
+            condition: checked
+
+    _role:
+        label: sunlab.backendpreregistration::lang.settings.fields.role.label
+        span: left
+        type: section
+
+    role:
+        label: sunlab.backendpreregistration::lang.settings.fields.role.label
+        comment: sunlab.backendpreregistration::lang.settings.fields.role.comment
+        span: left
+        type: dropdown
+
+    _additional_fields:
+        label: sunlab.backendpreregistration::lang.settings.fields.additional_fields.label
+        span: left
+        type: section
+
+    additional_fields:
+        label: sunlab.backendpreregistration::lang.settings.fields.additional_fields.label
+        span: left
+        type: repeater
+        form:
+            fields:
+                name:
+                    label: sunlab.backendpreregistration::lang.settings.fields.name.label
+                    span: left
+
+                required:
+                    label: sunlab.backendpreregistration::lang.settings.fields.required.label
+                    span: right
+                    type: switch
+
+                label:
+                    label: sunlab.backendpreregistration::lang.settings.fields.label.label
+                    span: left
+
+                type:
+                    label: sunlab.backendpreregistration::lang.settings.fields.type.label
+                    span: right
+                    type: dropdown
+                    searchable: false
+                    default: text
+                    options:
+                        text: Text
+                        password: Password
+                        checkbox: Checkbox
+
+                attributes:
+                    label: sunlab.backendpreregistration::lang.settings.fields.attributes.label
+                    comment: sunlab.backendpreregistration::lang.settings.fields.attributes.comment
+                    type: repeater
+                    form:
+                        fields:
+                            name:
+                                label: sunlab.backendpreregistration::lang.settings.fields.name.label
+                                span: left
+
+                            value:
+                                label: sunlab.backendpreregistration::lang.settings.fields.value.label
+                                span: right
+

@@ -1,0 +1,15 @@
+<div class="callout fade in callout-success no-subheader">
+    <div class="header">
+        <i class="icon-check"></i>
+        <h3><?= e(trans('sunlab.backendpreregistration::lang.thank-you.title')) ?></h3>
+    </div>
+    <div class="content">
+        <p><?= e(trans('sunlab.backendpreregistration::lang.thank-you.message')) ?></p>
+        <?php if ($settings->send_password_automatically): ?>
+        <p>
+            <?= e(trans('sunlab.backendpreregistration::lang.thank-you.credentials_will_be_sent_on')) ?>
+            <?= $settings->send_password_at->format(e(trans('sunlab.backendregistration::lang.date_format'))) ?>
+        </p>
+        <?php endif; ?>
+    </div>
+</div>
