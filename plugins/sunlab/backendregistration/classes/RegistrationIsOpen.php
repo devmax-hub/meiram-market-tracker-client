@@ -15,7 +15,8 @@ class RegistrationIsOpen
         ) {
             // Search for an eventual pre-registration
             if (!PluginManager::instance()->exists('SunLab.BackendPreRegistration')) {
-//                return Backend::redirect('comingSoon');
+                \Log::log('info', 'No pre-registration plugin found, redirecting to backend login');
+                return Backend::redirect('comingSoon');
             }
 
             $preRegistrationSettings = \SunLab\BackendPreRegistration\Models\Settings::instance();
