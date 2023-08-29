@@ -229,5 +229,6 @@ return [
     */
 
     'exception_policy_v1' => env('CMS_EXCEPTION_POLICY_V1', false),
+    'backend_uri' => env('CMS_BACKEND_URI', 'backend'),
 
 ];

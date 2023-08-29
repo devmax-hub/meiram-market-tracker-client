@@ -19,7 +19,15 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
+        if($this->app->runningInBackend()) {
+//            $this->applyAssets();
+        }
     }
+
+    /**
+     * onStart method, called right before the request route.
+     */
+
 
     /**
      * registerComponents used by the frontend.
@@ -34,4 +42,6 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
     }
+
+
 }
