@@ -4,3 +4,24 @@ plugin:
     author: Devmax
     icon: oc-icon-bullseye
     homepage: ''
+navigation:
+    main-menu-home:
+        label: Главная
+        url: /
+        icon: icon-life-ring
+    main-menu-users-master:
+        label: Лиды
+        url: /devmax/trackerclient/leads
+        icon: icon-user
+    main-menu-slave:
+        label: Клиенты
+        url: /
+        icon: icon-user-plus
+    main-menu-settings:
+        label: Настройка
+        url: /
+        icon: icon-gears
+permissions:
+    devmax.trackerclient.leads:
+        tab: Лиды
+        label: Лиды

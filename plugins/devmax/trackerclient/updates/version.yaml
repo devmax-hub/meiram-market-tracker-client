@@ -6,3 +6,9 @@ v1.0.2:
 v1.0.3:
     - 'Updated table devmax_trackerclient_users'
     - builder_table_update_devmax_trackerclient_users.php
+v1.0.4:
+    - 'Updated table devmax_trackerclient_users'
+    - builder_table_update_devmax_trackerclient_leads.php
+v1.0.5:
+    - 'Updated table devmax_trackerclient_leads'
+    - builder_table_update_devmax_trackerclient_leads_2.php

@@ -1,0 +1,10 @@
+name: Leads
+form: $/devmax/trackerclient/models/leads/fields.yaml
+modelClass: Devmax\TrackerClient\Models\Leads
+defaultRedirect: devmax/trackerclient/leads
+create:
+    redirect: 'devmax/trackerclient/leads/update/:id'
+    redirectClose: devmax/trackerclient/leads
+update:
+    redirect: devmax/trackerclient/leads
+    redirectClose: devmax/trackerclient/leads

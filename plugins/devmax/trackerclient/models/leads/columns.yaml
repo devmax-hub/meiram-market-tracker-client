@@ -1,0 +1,43 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: false
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: deleted_at
+        type: datetime
+        searchable: true
+        sortable: true
+    bonus:
+        label: bonus
+        type: number
+        searchable: true
+        sortable: true
+    depth:
+        label: depth
+        type: number
+        searchable: true
+        sortable: true
+    parent_id:
+        label: parent_id
+        type: number
+        searchable: true
+        sortable: true
+    backend_users_id:
+        label: user_id
+        type: number
+        searchable: false
+        invisible: true
+        sortable: false
+        relation: backend_users
