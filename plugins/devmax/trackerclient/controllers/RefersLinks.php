@@ -4,7 +4,7 @@ use Backend;
 use BackendMenu;
 use Backend\Classes\Controller;
 
-class Refers extends Controller
+class RefersLinks extends Controller
 {
     public $implement = [
         \Backend\Behaviors\FormController::class,
@@ -15,13 +15,13 @@ class Refers extends Controller
     public $listConfig = 'config_list.yaml';
 
     public $requiredPermissions = [
-        'devmax.trackerclient.refers'
+        'devmax.trackerclient.refers' 
     ];
 
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Devmax.TrackerClient', 'main-menu-users-master');
+        BackendMenu::setContext('Devmax.TrackerClient', 'main-main-dx-trackerclient-referal');
     }
 
 }

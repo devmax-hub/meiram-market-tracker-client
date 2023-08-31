@@ -1,6 +1,6 @@
-list: $/devmax/trackerclient/models/refers/columns.yaml
-modelClass: Devmax\TrackerClient\Models\Refers
-title: Refers
+list: $/devmax/trackerclient/models/referslinks/columns.yaml
+modelClass: Devmax\TrackerClient\Models\RefersLinks
+title: RefersLinks
 noRecordsMessage: 'backend::lang.list.no_records'
 showSetup: true
 showCheckboxes: true
@@ -9,4 +9,4 @@ toolbar:
     buttons: list_toolbar
     search:
         prompt: 'backend::lang.list.search_prompt'
-recordUrl: 'devmax/trackerclient/refers/update/:id'
+recordUrl: 'devmax/trackerclient/referslinks/update/:id'

@@ -1,6 +1,6 @@
 <div data-control="toolbar">
     <a
-        href="<?= Backend::url('devmax/trackerclient/refers/create') ?>"
+        href="<?= Backend::url('devmax/trackerclient/referslinks/create') ?>"
         class="btn btn-primary oc-icon-plus">
         <?= e(trans('backend::lang.form.create')) ?>
     </a>
