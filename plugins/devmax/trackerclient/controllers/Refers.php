@@ -4,7 +4,7 @@ use Backend;
 use BackendMenu;
 use Backend\Classes\Controller;
 
-class Leads extends Controller
+class Refers extends Controller
 {
     public $implement = [
         \Backend\Behaviors\FormController::class,
@@ -15,7 +15,7 @@ class Leads extends Controller
     public $listConfig = 'config_list.yaml';
 
     public $requiredPermissions = [
-        'devmax.trackerclient.leads' 
+        'devmax.trackerclient.leads'
     ];
 
     public function __construct()
