@@ -9,19 +9,28 @@ navigation:
         label: Главная
         url: /
         icon: icon-life-ring
+        order: ''
     main-menu-users-master:
-        label: Лиды
-        url: /devmax/trackerclient/leads
+        label: Реферы
+        url: /devmax/trackerclient/refers
         icon: icon-user
+        order: ''
     main-menu-slave:
         label: Клиенты
         url: /
         icon: icon-user-plus
+        order: ''
     main-menu-settings:
         label: Настройка
         url: /
         icon: icon-gears
+        order: ''
+    main-main-dx-trackerclient-referal:
+        label: Реферал
+        url: /devmax/trackerclient/refersLinks
+        icon: icon-chain
+        order: ''
 permissions:
-    devmax.trackerclient.leads:
+    devmax.trackerclient.refers:
         tab: Лиды
         label: Лиды

@@ -1,0 +1,45 @@
+columns:
+    id:
+        label: id
+        type: number
+    url:
+        label: url
+        type: text
+        searchable: true
+        sortable: true
+    uid:
+        label: uid
+        type: text
+        searchable: true
+        sortable: true
+    rating:
+        label: rating
+        type: number
+        searchable: true
+        sortable: true
+    counts:
+        label: counts
+        type: number
+        searchable: true
+        sortable: true
+    sucess_counts:
+        label: sucess_counts
+        type: number
+        searchable: true
+        sortable: true
+    status:
+        label: status
+        type: text
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        sortable: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        sortable: true
+    deleted_at:
+        label: deleted_at
+        type: datetime
+        sortable: true
