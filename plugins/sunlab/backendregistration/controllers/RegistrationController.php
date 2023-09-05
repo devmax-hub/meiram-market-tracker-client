@@ -12,6 +12,7 @@ use October\Rain\Support\Facades\Str;
 use SunLab\BackendRegistration\Models\Settings;
 use October\Rain\Support\Facades\Validator;
 use Exception;
+use Illuminate\Support\Facades\Log;
 
 class RegistrationController extends Controller
 {
@@ -65,15 +66,21 @@ class RegistrationController extends Controller
             $password_confirmation = post('password_confirmation');
         }
 
-        /** @var User $user */
-        $user = BackendAuth::register([
+
+        $credentials = [
             'login' => post('login'),
             'email' => post('email'),
             'password' => $password,
             'password_confirmation' => $password_confirmation,
             'role_id' => $this->settings->role
-        ]);
-
+        ];
+        Log::info(['user reg', $credentials]);
+        /** @var User $user */
+        $user = BackendAuth::register($credentials);
+        if ($user) {
+            User::where('id', $user->id)->update(['role_id' => $this->settings->role]);
+            Log::info(['user reg', User::where('id', $user->id)->first()]);
+        }
         if ($this->settings->need_activation) {
             $mailData = [
                 'password' => $password,

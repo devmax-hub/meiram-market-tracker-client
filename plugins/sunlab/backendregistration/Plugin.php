@@ -15,6 +15,7 @@ class Plugin extends PluginBase
     {
         $this->extendAuthController();
         $this->addPopupToAuthLayout();
+        $this->applyAssets();
     }
 
     public function pluginDetails(): array
@@ -66,5 +67,12 @@ class Plugin extends PluginBase
                 return View::make('sunlab.backendregistration::popup', ['terms' => $settings->terms]);
             });
         }
+    }
+
+    protected function applyAssets(): void
+    {
+        Event::listen('backend.page.beforeDisplay', function ($controller, $action, $params) {
+            $controller->addCss('/plugins/sunlab/backendregistration/assets/css/backendregistration.css');
+        });
     }
 }

@@ -2,7 +2,7 @@
 <input type="hidden" name="postback" value="1" />
 
 <div class="form-elements" role="form">
-    <div class="form-group text-field october">
+    <div class="form-group text-field horizontal-form october">
 
         <!-- Login -->
         <input
@@ -10,7 +10,7 @@
             name="login"
             value="<?= e(post('login')) ?>"
             class="form-control icon user m-b"
-            placeholder="<?= e(trans('backend::lang.user.login')) ?>"
+            placeholder="<?= e(trans('backend::lang.account.login_placeholder')) ?>"
             autocomplete="off"
             maxlength="255" />
         <div data-validate-for="login"></div>
@@ -59,9 +59,9 @@
         </label>
         <?php endif; ?>
 
-        <div class="alert alert-danger" data-validate-error>
-            <p data-message></p>
-        </div>
+<!--        <div class="alert alert-danger" data-validate-error>-->
+<!--            <p data-message></p>-->
+<!--        </div>-->
     </div>
     <div class="flex">
         <!-- Submit Login -->

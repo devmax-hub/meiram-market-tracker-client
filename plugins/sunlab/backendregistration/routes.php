@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use SunLab\BackendRegistration\Classes\RegistrationIsOpen;
 use SunLab\BackendRegistration\Controllers\RegistrationController;
 use Illuminate\Support\Facades\Log;
-Log::log('info', 'routes.php');
 
 Route::group(
     [
