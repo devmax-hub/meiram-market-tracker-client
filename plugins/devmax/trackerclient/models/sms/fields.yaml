@@ -1,0 +1,11 @@
+fields:
+    message:
+        label: Message
+        span: auto
+        type: text
+    name:
+        label: Client
+        span: auto
+        nameFrom: name
+        descriptionFrom: description
+        type: relation

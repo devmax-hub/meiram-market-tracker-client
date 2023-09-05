@@ -10,7 +10,6 @@
         "laravel/framework": "^9.0",
         "rainlab/builder-plugin": "^2.0",
         "rainlab/user-plugin": "^2.1",
-        "october/all": "^3.4",
         "rainlab/debugbar-plugin": "^3.3"
     },
     "require-dev": {
@@ -49,12 +48,5 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true,
-    "repositories": {
-        "octobercms": {
-            "type": "composer",
-            "url": "https://gateway.octobercms.com",
-            "only": ["october/*", "*-plugin", "*-theme"]
-        }
-    }
+    "prefer-stable": true
 }

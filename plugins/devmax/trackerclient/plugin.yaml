@@ -17,9 +17,18 @@ navigation:
         order: ''
     main-menu-slave:
         label: Клиенты
-        url: /
+        url: devmax/trackerclient/clients
         icon: icon-user-plus
         order: ''
+        sideMenu:
+            clients:
+                label: Клиенты
+                url: devmax/trackerclient/clients
+                icon: icon-users
+            sms:
+                label: CMC
+                url: devmax/trackerclient/sms
+                icon: icon-comment-o
     main-menu-settings:
         label: Настройка
         url: /
