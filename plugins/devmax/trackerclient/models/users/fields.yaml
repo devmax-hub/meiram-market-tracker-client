@@ -1,4 +1,8 @@
 fields:
+    id:
+        label: Id
+        span: auto
+        type: number
     user_id:
         label: 'User id'
         nameFrom: name
@@ -9,10 +13,6 @@ fields:
         label: 'Created at'
         span: auto
         type: datepicker
-    id:
-        label: Id
-        span: auto
-        type: number
     updated_at:
         label: 'Updated at'
         span: auto
@@ -25,7 +25,3 @@ fields:
         label: Depth
         span: auto
         type: number
-    parent_id:
-        label: 'Parent id'
-        span: auto
-        type: relation

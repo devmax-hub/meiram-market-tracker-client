@@ -10,7 +10,7 @@ navigation:
         url: /
         icon: icon-life-ring
         order: ''
-    main-menu-users-master:
+    main-menu-refers-master:
         label: Реферы
         url: /devmax/trackerclient/refers
         icon: icon-user

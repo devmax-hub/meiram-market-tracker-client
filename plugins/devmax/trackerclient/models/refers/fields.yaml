@@ -1,35 +1,22 @@
 fields:
-    id:
-        label: Id
-        span: auto
-        disabled: 1
-        readOnly: 1
-        type: number
-    parent_id:
-        label: 'Parent id'
-        span: auto
-        disabled: 0
-        readOnly: 0
-        type: number
     bonus:
-        label: Bonus
+        label: 'devmax.trackerclient::lang.bonus'
         span: auto
-        type: number
-    created_at:
-        label: 'Created at'
-        span: auto
-        type: datepicker
-    backend_users_id:
-        label: 'Backend users id'
-        span: auto
-        disabled: 1
-        readOnly: 1
         type: number
     updated_at:
-        label: 'Updated at'
+        label: 'devmax.trackerclient::lang.updated_at'
+        mode: datetime
         span: auto
+        default: now
+        readOnly: 1
         type: datepicker
     depth:
-        label: Depth
+        label: Рейтинг
         span: auto
         type: number
+    backend_users_id:
+        label: 'ID Пользователя'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation

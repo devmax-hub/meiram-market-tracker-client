@@ -2,28 +2,33 @@ columns:
     id:
         label: id
         type: number
-    url:
-        label: url
+    uid:
+        label: 'devmax.trackerclient::lang.uid'
         type: text
         searchable: true
         sortable: true
-    uid:
-        label: uid
+    url:
+        label: 'devmax.trackerclient::lang.url'
+        type: text
+        searchable: true
+        sortable: true
+    mod_url:
+        label: 'devmax.trackerclient::lang.url_mod'
         type: text
         searchable: true
         sortable: true
     rating:
-        label: rating
+        label: 'devmax.trackerclient::lang.rating'
         type: number
         searchable: true
         sortable: true
     counts:
-        label: counts
+        label: 'devmax.trackerclient::lang.counts'
         type: number
         searchable: true
         sortable: true
     sucess_counts:
-        label: sucess_counts
+        label: 'devmax.trackerclient::lang.success_counts'
         type: number
         searchable: true
         sortable: true
@@ -31,15 +36,7 @@ columns:
         label: status
         type: text
         sortable: true
-    created_at:
-        label: created_at
-        type: datetime
-        sortable: true
     updated_at:
-        label: updated_at
-        type: datetime
-        sortable: true
-    deleted_at:
-        label: deleted_at
+        label: 'devmax.trackerclient::lang.updated_at'
         type: datetime
         sortable: true
