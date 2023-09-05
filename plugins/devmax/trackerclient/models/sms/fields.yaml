@@ -3,9 +3,8 @@ fields:
         label: Message
         span: auto
         type: text
-    name:
+    parent:
         label: Client
-        span: auto
         nameFrom: name
-        descriptionFrom: description
+        span: auto
         type: relation

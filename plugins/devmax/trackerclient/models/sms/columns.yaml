@@ -5,10 +5,3 @@ columns:
         searchable: true
         invisible: false
         sortable: true
-    client_name:
-        label: Client
-        type: text
-        searchable: true
-        sortable: true
-        select: name # Отобразить имя клиента
-        relation: clients # Использовать связь 'clients' из модели SMS

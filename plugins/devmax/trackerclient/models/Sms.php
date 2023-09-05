@@ -1,6 +1,7 @@
 <?php
 namespace Devmax\TrackerClient\Models;
 
+use Devmax\TrackerClient\Models\Clients;
 use Model;
 
 /**
@@ -10,6 +11,7 @@ class Sms extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\SoftDelete;
+    use \October\Rain\Database\Traits\SimpleTree;
 
     /**
      * @var array dates to cast from the database.
@@ -23,11 +25,7 @@ class Sms extends Model
 
 
     public $belongsTo = [
-        'clients' => [
-            'Devmax\TrackerClient\Models\Client',
-            'table' => 'devmax_trackerclient_clients',
-            'order' => 'client_name'
-        ]
+        'parent' => [Clients::class, 'key' => 'id'],
     ];
 
     public function client()

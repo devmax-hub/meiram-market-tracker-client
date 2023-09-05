@@ -1,6 +1,7 @@
 <?php
 namespace Devmax\TrackerClient\Models;
 
+use Devmax\TrackerClient\Models\Sms;
 use Model;
 
 /**
@@ -10,6 +11,7 @@ class Clients extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\SoftDelete;
+    use \October\Rain\Database\Traits\SimpleTree;
 
     /**
      * @var array dates to cast from the database.
@@ -23,7 +25,7 @@ class Clients extends Model
 
 
     public $hasMany = [
-        'sms' => Devmax\TrackerClient\Models\Sms::class
+        'children' => [Sms::class, 'key' => 'parent_id'],
     ];
     public function getAllSms()
     {
