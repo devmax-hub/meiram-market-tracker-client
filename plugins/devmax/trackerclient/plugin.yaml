@@ -5,11 +5,6 @@ plugin:
     icon: oc-icon-bullseye
     homepage: ''
 navigation:
-    main-menu-home:
-        label: Главная
-        url: /
-        icon: icon-life-ring
-        order: ''
     main-menu-refers-master:
         label: Реферы
         url: /devmax/trackerclient/refers
@@ -32,5 +27,8 @@ navigation:
         order: ''
 permissions:
     devmax.trackerclient.refers:
-        tab: Лиды
-        label: Лиды
+        tab: Реферы
+        label: Реферы
+    devmax.trackerclient.refers.clients:
+        tab: Реферы
+        label: Клиенты
