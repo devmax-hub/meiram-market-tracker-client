@@ -29,3 +29,5 @@ nbproject
 /vendor
 
 plugins/devmax/trackerclient/node_modules/
+
+docs/TODOS\.md
