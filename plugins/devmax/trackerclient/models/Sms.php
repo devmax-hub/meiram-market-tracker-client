@@ -25,12 +25,12 @@ class Sms extends Model
 
 
     public $belongsTo = [
-        'parent' => [Clients::class, 'key' => 'id'],
+        'clients' => [Clients::class, 'key' => 'client_id'],
     ];
 
     public function client()
     {
-        return $this->belongsTo('Devmax\TrackerClient\Models\Client');
+        return $this->belongsTo('Devmax\TrackerClient\Models\Clients');
     }
 
     /**

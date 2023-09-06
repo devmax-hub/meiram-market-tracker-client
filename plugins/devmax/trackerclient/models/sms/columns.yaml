@@ -5,3 +5,27 @@ columns:
         searchable: true
         invisible: false
         sortable: true
+    message:
+        label: 'devmax.trackerclient::lang.clients.message'
+        type: text
+        searchable: true
+        sortable: true
+    clients:
+        label: 'devmax.trackerclient::lang.clients.name'
+        type: text
+        searchable: true
+        sortable: true
+        select: name
+        relation: clients
+    phone:
+        label: 'devmax.trackerclient::lang.clients.phone'
+        type: text
+        searchable: true
+        sortable: true
+        select: phone
+        relation: clients
+    created_at:
+        label: 'devmax.trackerclient::lang.clients.date'
+        type: datetime
+        searchable: true
+        sortable: true

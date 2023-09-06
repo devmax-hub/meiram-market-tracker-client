@@ -46,6 +46,5 @@ fields:
     sms:
         label: 'devmax.trackerclient::lang.clients.sms'
         span: auto
-        nameFrom: sms
-        descriptionFrom: description
+        nameFrom: message
         type: relation

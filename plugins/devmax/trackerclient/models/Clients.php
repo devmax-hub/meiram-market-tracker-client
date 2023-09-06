@@ -1,7 +1,7 @@
 <?php
 namespace Devmax\TrackerClient\Models;
 
-use Devmax\TrackerClient\Models\Sms;
+
 use Model;
 
 /**
@@ -11,7 +11,6 @@ class Clients extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\SoftDelete;
-    use \October\Rain\Database\Traits\SimpleTree;
 
     /**
      * @var array dates to cast from the database.
@@ -25,16 +24,11 @@ class Clients extends Model
 
 
     public $hasMany = [
-        'children' => [Sms::class, 'key' => 'parent_id'],
+        'sms' => [Sms::class, 'key' => 'client_id'],
     ];
-    public function getAllSms()
-    {
-        return $this->hasMany('Devmax\TrackerClient\Models\Sms');
-
-    }
     public function sms()
     {
-        return $this->hasMany(Sms::class)->orderBy('created_at', 'desc');
+        return $this->hasMany('Devmax\TrackerClient\Models\Sms');
     }
 
     /**
