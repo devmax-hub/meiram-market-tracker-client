@@ -3,6 +3,7 @@ namespace Devmax\TrackerClient;
 
 use Config;
 use Event;
+use Illuminate\Support\Facades\App;
 use System\Classes\PluginBase;
 use Illuminate\Support\Facades\Log;
 

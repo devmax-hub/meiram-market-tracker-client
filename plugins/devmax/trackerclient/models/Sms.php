@@ -11,7 +11,6 @@ class Sms extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\SoftDelete;
-    use \October\Rain\Database\Traits\SimpleTree;
 
     /**
      * @var array dates to cast from the database.

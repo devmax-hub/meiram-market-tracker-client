@@ -5,11 +5,6 @@ columns:
         searchable: true
         invisible: false
         sortable: true
-    message:
-        label: 'devmax.trackerclient::lang.clients.message'
-        type: text
-        searchable: true
-        sortable: true
     clients:
         label: 'devmax.trackerclient::lang.clients.name'
         type: text
@@ -24,8 +19,28 @@ columns:
         sortable: true
         select: phone
         relation: clients
+    message:
+        label: 'devmax.trackerclient::lang.clients.message'
+        type: text
+        searchable: true
+        sortable: true
     created_at:
         label: 'devmax.trackerclient::lang.clients.date'
         type: datetime
         searchable: true
         sortable: true
+        format: d.m.Y
+    updated_at:
+        label: 'devmax.trackerclient::lang.clients.updated_at'
+        type: datetime
+        searchable: true
+        sortable: true
+        format: d.m.Y
+        invisible: true
+    deleted_at:
+        label: 'devmax.trackerclient::lang.clients.deleted_at'
+        type: datetime
+        searchable: true
+        sortable: true
+        format: d.m.Y
+        invisible: true

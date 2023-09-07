@@ -60,3 +60,6 @@ v1.0.20:
 v1.0.21:
     - 'Updated table devmax_trackerclient_sms'
     - builder_table_update_devmax_trackerclient_sms_8.php
+v1.0.22:
+    - 'Updated table devmax_trackerclient_clients'
+    - builder_table_update_devmax_trackerclient_clients_3.php
