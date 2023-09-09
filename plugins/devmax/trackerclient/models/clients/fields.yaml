@@ -1,0 +1,51 @@
+fields:
+    id:
+        label: Id
+        span: auto
+        preset:
+            field: id
+            type: ''
+        type: text
+    created_at:
+        label: 'devmax.trackerclient::lang.user.created_at'
+        mode: datetime
+        span: auto
+        type: datepicker
+    updated_at:
+        label: 'devmax.trackerclient::lang.import_export.updated'
+        mode: datetime
+        span: auto
+        type: datepicker
+    deleted_at:
+        label: 'devmax.trackerclient::lang.user.deleted_at'
+        mode: datetime
+        span: auto
+        type: datepicker
+    phone:
+        label: 'devmax.trackerclient::lang.clients.phone'
+        span: auto
+        type: text
+    name:
+        label: 'devmax.trackerclient::lang.clients.name'
+        span: auto
+        type: text
+    refer_id:
+        label: 'devmax.trackerclient::lang.clients.refer_id'
+        span: auto
+        type: text
+    webinar:
+        label: 'devmax.trackerclient::lang.clients.webinar'
+        mode: datetime
+        span: auto
+        type: datepicker
+    invited:
+        label: 'devmax.trackerclient::lang.clients.invited'
+        mode: datetime
+        span: auto
+        type: datepicker
+    sms:
+        label: 'devmax.trackerclient::lang.clients.sms'
+        span: auto
+        nameFrom: sms
+        descriptionFrom: description
+        type: relation

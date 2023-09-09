@@ -1,0 +1,46 @@
+columns:
+    id:
+        label: 'devmax.trackerclient::lang.clients.id'
+        type: number
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'devmax.trackerclient::lang.user.created_at'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'devmax.trackerclient::lang.import_export.updated'
+        type: datetime
+        searchable: true
+        sortable: true
+    deleted_at:
+        label: 'devmax.trackerclient::lang.user.deleted_at'
+        type: datetime
+        searchable: true
+        sortable: true
+    refer_id:
+        label: 'devmax.trackerclient::lang.clients.refer_id'
+        type: text
+        searchable: true
+        sortable: true
+    phone:
+        label: 'devmax.trackerclient::lang.clients.phone'
+        type: text
+        searchable: true
+        sortable: true
+    name:
+        label: 'devmax.trackerclient::lang.clients.name'
+        type: text
+        searchable: true
+        sortable: true
+    webinar:
+        label: 'devmax.trackerclient::lang.clients.webinar'
+        type: datetime
+        searchable: true
+        sortable: true
+    invited:
+        label: 'devmax.trackerclient::lang.clients.invited'
+        type: datetime
+        searchable: true
+        sortable: true
