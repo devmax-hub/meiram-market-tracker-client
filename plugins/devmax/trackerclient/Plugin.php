@@ -1,9 +1,12 @@
-<?php namespace Devmax\TrackerClient;
+<?php
+namespace Devmax\TrackerClient;
 
 use Config;
 use Event;
+use Illuminate\Support\Facades\App;
 use System\Classes\PluginBase;
 use Illuminate\Support\Facades\Log;
+
 /**
  * Plugin class
  */
@@ -21,7 +24,7 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
-        if($this->app->runningInBackend()) {
+        if ($this->app->runningInBackend()) {
             $this->applyAssets();
         }
     }
@@ -45,7 +48,8 @@ class Plugin extends PluginBase
     {
     }
 
-    protected function applyAssets(){
+    protected function applyAssets()
+    {
         Event::listen('backend.page.beforeDisplay', function ($controller, $action, $params) {
             $controller->addCss('/plugins/devmax/trackerclient/assets/css/style.css', 'Devmax.TrackerClient');
             $controller->addJs('/plugins/devmax/trackerclient/assets/js/script.js', 'Devmax.TrackerClient');

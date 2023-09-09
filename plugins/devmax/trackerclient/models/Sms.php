@@ -11,7 +11,6 @@ class Sms extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\SoftDelete;
-    use \October\Rain\Database\Traits\SimpleTree;
 
     /**
      * @var array dates to cast from the database.
@@ -25,12 +24,12 @@ class Sms extends Model
 
 
     public $belongsTo = [
-        'parent' => [Clients::class, 'key' => 'id'],
+        'clients' => [Clients::class, 'key' => 'client_id'],
     ];
 
     public function client()
     {
-        return $this->belongsTo('Devmax\TrackerClient\Models\Client');
+        return $this->belongsTo('Devmax\TrackerClient\Models\Clients');
     }
 
     /**

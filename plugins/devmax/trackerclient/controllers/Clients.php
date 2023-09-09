@@ -3,6 +3,7 @@ namespace Devmax\TrackerClient\Controllers;
 
 use Backend;
 use BackendMenu;
+// use Illuminate\Routing\Controller;
 use Backend\Classes\Controller;
 use Backend\Facades\BackendAuth;
 
@@ -36,5 +37,4 @@ class Clients extends Controller
             return $query->where('id', $clientId);
         }
     }
-
 }
