@@ -1,8 +1,13 @@
 <?php
 
+
+
 namespace Devmax\TrackerClient\Controllers;
 
+include_once "smsc_api.php";
+
 use Devmax\TrackerClient\Models\Clients;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
@@ -21,5 +26,19 @@ class ClientController extends Controller
     $client->save();
 
     return response()->json(['message' => 'Successfully created'], 201);
+  }
+
+
+
+  public function getBalance()
+  {
+    try {
+      $balance = get_balance();
+      return response()->json(['balance' => $balance], 200);
+    } catch (Exception $e) {
+      echo "Ошибка: " . $e->getMessage() . "\n";
+    }
+
+
   }
 }

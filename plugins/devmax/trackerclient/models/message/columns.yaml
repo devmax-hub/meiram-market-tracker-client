@@ -1,0 +1,16 @@
+columns:
+    number:
+        label: 'Номер'
+        type: number
+        searchable: true
+        sortable: true
+    title:
+        label: 'devmax.trackerclient::lang.clients.title'
+        type: text
+        searchable: true
+        sortable: true
+    text:
+        label: 'devmax.trackerclient::lang.clients.message'
+        type: text
+        searchable: true
+        sortable: true

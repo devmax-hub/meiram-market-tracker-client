@@ -1,0 +1,9 @@
+fields:
+    title:
+        label: 'devmax.trackerclient::lang.clients.title'
+        span: auto
+        type: text
+    text:
+        label: 'devmax.trackerclient::lang.clients.message'
+        span: auto
+        type: text

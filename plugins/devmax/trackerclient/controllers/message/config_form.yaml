@@ -1,0 +1,10 @@
+name: Message
+form: $/devmax/trackerclient/models/message/fields.yaml
+modelClass: Devmax\TrackerClient\Models\Message
+defaultRedirect: devmax/trackerclient/message
+create:
+    redirect: 'devmax/trackerclient/message/update/:id'
+    redirectClose: devmax/trackerclient/message
+update:
+    redirect: devmax/trackerclient/message
+    redirectClose: devmax/trackerclient/message
