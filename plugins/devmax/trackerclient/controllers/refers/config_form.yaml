@@ -1,0 +1,10 @@
+name: Refers
+form: $/devmax/trackerclient/models/refers/fields.yaml
+modelClass: Devmax\TrackerClient\Models\Refers
+defaultRedirect: devmax/trackerclient/refers
+create:
+    redirect: 'devmax/trackerclient/refers/update/:id'
+    redirectClose: devmax/trackerclient/refers
+update:
+    redirect: devmax/trackerclient/refers
+    redirectClose: devmax/trackerclient/refers

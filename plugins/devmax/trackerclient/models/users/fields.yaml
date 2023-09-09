@@ -1,0 +1,27 @@
+fields:
+    id:
+        label: Id
+        span: auto
+        type: number
+    user_id:
+        label: 'User id'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+    created_at:
+        label: 'Created at'
+        span: auto
+        type: datepicker
+    updated_at:
+        label: 'Updated at'
+        span: auto
+        type: datepicker
+    bonus:
+        label: Bonus
+        span: auto
+        type: number
+    depth:
+        label: Depth
+        span: auto
+        type: number

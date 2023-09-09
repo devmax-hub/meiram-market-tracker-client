@@ -1,0 +1,10 @@
+name: RefersLinks
+form: $/devmax/trackerclient/models/referslinks/fields.yaml
+modelClass: Devmax\TrackerClient\Models\RefersLinks
+defaultRedirect: devmax/trackerclient/referslinks
+create:
+    redirect: 'devmax/trackerclient/referslinks/update/:id'
+    redirectClose: devmax/trackerclient/referslinks
+update:
+    redirect: devmax/trackerclient/referslinks
+    redirectClose: devmax/trackerclient/referslinks

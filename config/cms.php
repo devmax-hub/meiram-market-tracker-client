@@ -91,7 +91,7 @@ return [
     |
     */
 
-    'enable_route_cache' => env('CMS_ROUTE_CACHE', true),
+    'enable_route_cache' => env('CMS_ROUTE_CACHE', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -104,7 +104,7 @@ return [
     |
     */
 
-    'url_cache_ttl' => 60,
+    'url_cache_ttl' => 1,
 
     /*
     |--------------------------------------------------------------------------
@@ -229,5 +229,5 @@ return [
     */
 
     'exception_policy_v1' => env('CMS_EXCEPTION_POLICY_V1', false),
-
+    'backend_uri' => env('CMS_BACKEND_URI', 'backend'),
 ];

@@ -4,3 +4,31 @@ plugin:
     author: Devmax
     icon: oc-icon-bullseye
     homepage: ''
+navigation:
+    main-menu-refers-master:
+        label: Реферы
+        url: /devmax/trackerclient/refers
+        icon: icon-user
+        order: ''
+    main-menu-slave:
+        label: Клиенты
+        url: /
+        icon: icon-user-plus
+        order: ''
+    main-menu-settings:
+        label: Настройка
+        url: /
+        icon: icon-gears
+        order: ''
+    main-main-dx-trackerclient-referal:
+        label: Реферал
+        url: /devmax/trackerclient/refersLinks
+        icon: icon-chain
+        order: ''
+permissions:
+    devmax.trackerclient.refers:
+        tab: Реферы
+        label: Реферы
+    devmax.trackerclient.refers.clients:
+        tab: Реферы
+        label: Клиенты

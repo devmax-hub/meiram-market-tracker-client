@@ -23,7 +23,7 @@ return [
     |
     */
 
-    'skin' => Backend\Skins\Standard::class,
+    'skin' => \Devmax\TrackerClient\Skin\CustomSkin::class,
 
     /*
     |--------------------------------------------------------------------------

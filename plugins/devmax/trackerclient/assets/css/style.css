@@ -1,0 +1,347 @@
+:root,
+[data-bs-theme="light"] {
+  --bs-emphasis-color: #333333;
+  --bs-border-color: #d7e1ea;
+  --oc-border-focus: #72809d;
+  --bs-backdrop-opacity: 0.2;
+  --bs-success: var(--bs-green);
+  --bs-info: var(--bs-blue);
+  --bs-warning: var(--bs-yellow);
+  --bs-danger: var(--bs-red);
+  --oc-accent: #3498db;
+  --oc-accent-text: #258cd1;
+  --oc-selection: var(--bs-teal);
+  --oc-selection-rgb: 107, 196, 141;
+  --oc-selection-text: #39905a;
+  --oc-primary-bg: white;
+  --oc-primary-color: #5e6d8c;
+  --oc-primary-border: #cfd7e1;
+  --oc-primary-hover-bg: #8082f8;
+  --oc-primary-active-bg: #8889f9;
+  --bs-secondary: #72809d;
+  --bs-secondary-color: #72809d;
+  --oc-secondary-bg: #eeeff0;
+  --oc-secondary-hover-bg: #e0e2e4;
+  --oc-secondary-active-bg: #d3d6d8;
+  --oc-form-control-bg: white;
+  --oc-form-control-disabled-bg: #e9ecef;
+  --oc-form-control-disabled-color: #899c9d;
+  --oc-input-translatable-color: #75809b;
+  --oc-input-translatable-bg: #ebf0fb;
+  --oc-input-selection-color: #000;
+  --oc-input-selection-bg: #b5d6fd;
+  --oc-mainnav-color: white;
+  --oc-mainnav-bg: #2D3134;
+  --oc-mainnav-icon-color: white;
+  --oc-sidebar-color: #536061;
+  --oc-sidebar-bg: #e9edf3;
+  --oc-sidebar-active-color: #333;
+  --oc-sidebar-active-bg: white;
+  --oc-sidebar-active-border: var(--bs-primary);
+  --oc-sidebar-hover-bg: white;
+  --oc-editor-bg: #f0f4f8;
+  --oc-editor-section-color: #333;
+  --oc-editor-section-bg: #d7e1eA;
+  --oc-editor-tab-color: #5e6d8c;
+  --oc-editor-tab-bg: #e9edf3;
+  --oc-editor-tab-active-color: #2c3e4f;
+  --oc-editor-tab-active-bg: var(--bs-body-bg);
+  --oc-document-toolbar-bg: var(--bs-body-bg);
+  --oc-document-tabs-bg: white;
+  --oc-document-content-bg: white;
+  --oc-document-ruler-bg: #d7e1ea;
+  --oc-document-ruler-color: white;
+  --oc-document-ruler-tick: #bdc3c7;
+  --oc-settings-color: #536061;
+  --oc-settings-bg: #f0f4f8;
+  --oc-settings-item: white;
+  --oc-settings-active-color: white;
+  --oc-settings-active-bg: #6bc48d;
+  --oc-settings-hover-bg: #dfe7ee;
+  --oc-toolbar-color: #536061;
+  --oc-toolbar-bg: white;
+  --oc-toolbar-border: #ecf0f1;
+  --oc-toolbar-hover-color: black;
+  --oc-toolbar-hover-bg: rgba(215, 225, 234, 0.7);
+  --oc-tab-color: #72809d;
+  --oc-tab-bg: #ffffff;
+  --oc-tab-active-color: #35425b;
+  --oc-tab-border: #d7e1eA;
+  --oc-tab-hover-bg: rgba(215, 225, 234, 0.7);
+  --oc-dropdown-trigger-border: #bcc3c7;
+  --oc-dropdown-trigger-color: #536061;
+  --oc-dropdown-trigger-bg: white;
+  --oc-dropdown-hover-bg: var(--bs-primary);
+  --oc-dropdown-hover-color: white;
+  --oc-dropdown-active-bg: rgba(var(--bs-primary-rgb), 0.95);
+  --oc-dropdown-active-color: white;
+}
+:root,
+[data-bs-theme="light"],
+:root .table,
+[data-bs-theme="light"] .table {
+  --bs-table-color: #536061;
+  --bs-table-bg: white;
+  --bs-table-striped-bg: #F7F9FB;
+  --bs-table-border-color: #ecf0f1;
+  --bs-table-hover-bg: #fff5cb;
+  --oc-table-active-bg: #fff0b1;
+}
+:root,
+[data-bs-theme="light"],
+:root .pagination,
+[data-bs-theme="light"] .pagination {
+  --bs-pagination-active-bg: var(--bs-primary);
+  --bs-pagination-active-border-color: var(--bs-primary);
+}
+:root,
+[data-bs-theme="light"],
+:root .breadcrumb,
+[data-bs-theme="light"] .breadcrumb {
+  --bs-breadcrumb-divider: "›";
+  --bs-breadcrumb-item-padding-x: 0.4rem;
+}
+:root,
+[data-bs-theme="light"],
+:root .modal,
+[data-bs-theme="light"] .modal {
+  --bs-modal-bg: white;
+}
+[data-bs-theme="dark"] {
+  --bs-heading-color: #e0e0e0;
+  --bs-emphasis-color: white;
+  --bs-border-color: #383a3e;
+  --bs-backdrop-opacity: 0.5;
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #41b862;
+  --bs-teal: #24b58a;
+  --bs-cyan: #0dcaf0;
+  --oc-primary-color: rgba(173, 181, 189, 0.85);
+  --oc-primary-bg: #141515;
+  --oc-primary-border: #494c50;
+  --bs-secondary-color: rgba(173, 181, 189, 0.75);
+  --oc-secondary-bg: #6f6f6f;
+  --oc-secondary-hover-bg: #7b7b7b;
+  --oc-secondary-active-bg: #888;
+  --oc-form-control-bg: #1e2227;
+  --oc-form-control-disabled-bg: #343a40;
+  --oc-input-translatable-color: rgba(173, 181, 189, 0.85);
+  --oc-input-translatable-bg: #272b2e;
+  --oc-input-selection-color: #e0e0e0;
+  --oc-input-selection-bg: #373f47;
+  --oc-sidebar-color: #d7e1eA;
+  --oc-sidebar-bg: #292a2d;
+  --oc-sidebar-active-color: white;
+  --oc-sidebar-active-bg: #424242;
+  --oc-sidebar-hover-bg: #424242;
+  --oc-editor-bg: #212529;
+  --oc-editor-section-bg: #383a3e;
+  --oc-editor-section-color: #e0e0e0;
+  --oc-editor-tab-color: #adb5bd;
+  --oc-editor-tab-bg: #181a1e;
+  --oc-editor-tab-active-color: #e0e0e0;
+  --oc-editor-tab-active-bg: #202124;
+  --oc-document-toolbar-bg: #202124;
+  --oc-document-tabs-bg: #24262a;
+  --oc-document-content-bg: #181a1e;
+  --oc-document-ruler-bg: #353b42;
+  --oc-document-ruler-color: #1e2227;
+  --oc-document-ruler-tick: #495057;
+  --oc-settings-color: #adb5bd;
+  --oc-settings-bg: #1b1f22;
+  --oc-settings-item: #212529;
+  --oc-settings-active-color: white;
+  --oc-settings-active-bg: #2b3442;
+  --oc-settings-hover-bg: #2b3442;
+  --oc-toolbar-color: #adb5bd;
+  --oc-toolbar-bg: #1e2227;
+  --oc-toolbar-border: #242a30;
+  --oc-toolbar-hover-color: white;
+  --oc-toolbar-hover-bg: #43484e;
+  --oc-tab-color: var(--bs-body-color);
+  --oc-tab-bg: var(--bs-body-bg);
+  --oc-tab-active-color: #e0e0e0;
+  --oc-tab-border: #383a3e;
+  --oc-tab-hover-bg: rgba(215, 225, 234, 0.2);
+  --oc-dropdown-trigger-border: #495057;
+  --oc-dropdown-trigger-color: #e0e0e0;
+  --oc-dropdown-trigger-bg: #12262c;
+}
+[data-bs-theme="dark"],
+[data-bs-theme="dark"] .table {
+  --bs-table-color: #adb5bd;
+  --bs-table-bg: #1e2227;
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-border-color: #242a30;
+  --bs-table-hover-bg: #35425b;
+  --bs-table-hover-color: #e0e0e0;
+  --oc-table-active-bg: #2c364b;
+}
+[data-bs-theme="dark"],
+[data-bs-theme="dark"] .modal {
+  --bs-modal-bg: #1a1d21;
+}
+ul.mainmenu-items {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+ul.mainmenu-items > li.mainmenu-item {
+  display: block;
+}
+.mainmenu-item {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.mainmenu-item > a,
+.mainmenu-item > .mainmenu-item-container {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -moz-align-items: baseline;
+  -ms-align-items: baseline;
+  align-items: baseline;
+  text-decoration: none!important;
+  outline: none;
+  color: var(--oc-mainnav-color);
+}
+.mainmenu-item > a:after,
+.mainmenu-item > .mainmenu-item-container:after {
+  opacity: 1;
+}
+.mainmenu-item .nav-label {
+  opacity: 1;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -moz-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.mainmenu-item .nav-icon {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  height: 100%;
+  color: var(--oc-mainnav-icon-color);
+}
+.mainmenu-item .nav-icon .svg-icon {
+  /* Fix for SVG icons not rendering on initial page load until repaint (hover, move, etc) */
+  backface-visibility: hidden;
+  position: relative;
+}
+.mainmenu-item .nav-icon i {
+  vertical-align: middle;
+  display: block;
+  height: 100%;
+}
+.mainmenu-item .nav-icon i:before {
+  position: relative;
+}
+.mainmenu-item span.counter {
+  -moz-flex: 0 0 auto;
+  flex: 0 0 auto;
+  position: relative;
+  top: 1px;
+  padding: 2px 2px;
+  background-color: #ff3e1d;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 100%;
+  opacity: 1;
+  border-radius: 4px;
+  transform: scale(1);
+  transition: transform 0.3s;
+  margin-left: 6px;
+}
+.mainmenu-item span.counter.empty {
+  transform: scale(0);
+  opacity: 0;
+  padding: 0;
+  margin-left: 0!important;
+}
+.mainmenu-item.has-subitems > a:after,
+.mainmenu-item.has-subitems > .mainmenu-item-container:after {
+  display: inline-block;
+}
+.mainmenu-item.has-subitems span.counter {
+  right: 17px;
+}
+.mainmenu-item.mainmenu-account .nav-icon {
+  opacity: 1;
+  width: 42px;
+}
+.mainmenu-item.active .nav-label,
+.mainmenu-item.active .nav-icon,
+.mainmenu-item.active > a:after {
+  opacity: 1;
+}
+.mainmenu-item.has-solidicon .nav-icon {
+  opacity: 1;
+}
+body:not(.drag) .mainmenu-item:hover .nav-label,
+body:not(.drag) .mainmenu-item:hover .nav-icon,
+body:not(.drag) .mainmenu-item:hover > a:after {
+  opacity: 1;
+}
+body:not(.drag) ul.mainmenu-items.hover-effects li > a:hover {
+  background: var(--bs-primary);
+  color: white;
+}
+html.mobile .mainmenu-item .nav-label {
+  font-size: 16px;
+}
+:root {
+  --oc-nav-logo-offset-top: -2px;
+  --oc-nav-logo-offset-start: 0;
+  --oc-nav-logo-opacity: 1;
+}
+.layout-mainmenu .navbar.has-logo .toolbar-logo {
+  position: relative;
+}
+.layout-mainmenu .navbar.has-logo ul.mainmenu-items[data-main-menu] {
+  margin-left: 10px;
+}
+.layout-mainmenu .navbar.has-logo ul.mainmenu-items[data-main-menu] li.is-dashboard {
+  display: none;
+}
+.layout-mainmenu .navbar.has-logo .toolbar-item.toolbar-primary:before {
+  left: -5px;
+}
+.layout-mainmenu .navbar.has-logo.navbar-mode-tile .mainmenu-logo {
+  padding-top: 20px;
+}
+.mainmenu-logo {
+  display: block;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.mainmenu-logo .nav-logo {
+  height: 40px;
+  position: relative;
+  top: var(--oc-nav-logo-offset-top);
+  left: var(--oc-nav-logo-offset-start);
+  opacity: var(--oc-nav-logo-opacity);
+}
+.mainmenu-logo.active .nav-logo,
+.mainmenu-logo:hover .nav-logo {
+  opacity: 1;
+}
+

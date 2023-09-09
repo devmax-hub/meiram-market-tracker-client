@@ -1,2 +1,44 @@
 v1.0.1:
     - 'Initialize plugin'
+v1.0.2:
+    - 'Created table devmax_trackerclient_users'
+    - builder_table_create_devmax_trackerclient_users.php
+v1.0.3:
+    - 'Updated table devmax_trackerclient_users'
+    - builder_table_update_devmax_trackerclient_users.php
+v1.0.4:
+    - 'Updated table devmax_trackerclient_users'
+    - builder_table_update_devmax_trackerclient_leads.php
+v1.0.5:
+    - 'Updated table devmax_trackerclient_leads'
+    - builder_table_update_devmax_trackerclient_leads_2.php
+v1.0.6:
+    - 'Created table devmax_trackerclient__refer_links'
+    - builder_table_create_devmax_trackerclient__refer_links.php
+v1.0.7:
+    - 'Updated table devmax_trackerclient__refer_links'
+    - builder_table_update_devmax_trackerclient__refer_links.php
+v1.0.8:
+    - 'Updated table devmax_trackerclient_leads'
+    - builder_table_update_devmax_trackerclient_refer.php
+v1.0.9:
+    - 'Updated table devmax_trackerclient_refer'
+    - builder_table_update_devmax_trackerclient_refers.php
+v1.0.10:
+    - 'Updated table devmax_trackerclient_refers'
+    - builder_table_update_devmax_trackerclient_refers_2.php
+v1.0.11:
+    - 'Updated table devmax_trackerclient_refers'
+    - builder_table_update_devmax_trackerclient_refers_3.php
+v1.0.12:
+    - 'Updated table devmax_trackerclient__refer_links'
+    - builder_table_update_devmax_trackerclient__refer_links_2.php
+v1.0.13:
+    - 'Updated table devmax_trackerclient__refer_links'
+    - builder_table_update_devmax_trackerclient__refer_links_3.php
+v1.0.14:
+    - 'Updated table devmax_trackerclient__refer_links'
+    - builder_table_update_devmax_trackerclient__refer_links_4.php
+v1.0.15:
+    - 'Updated table devmax_trackerclient__refer_links'
+    - builder_table_update_devmax_trackerclient__refer_links_5.php

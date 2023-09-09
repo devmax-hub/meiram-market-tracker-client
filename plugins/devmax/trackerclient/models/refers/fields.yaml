@@ -1,0 +1,22 @@
+fields:
+    bonus:
+        label: 'devmax.trackerclient::lang.bonus'
+        span: auto
+        type: number
+    updated_at:
+        label: 'devmax.trackerclient::lang.updated_at'
+        mode: datetime
+        span: auto
+        default: now
+        readOnly: 1
+        type: datepicker
+    depth:
+        label: Рейтинг
+        span: auto
+        type: number
+    backend_users_id:
+        label: 'ID Пользователя'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation

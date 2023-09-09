@@ -1,0 +1,44 @@
+fields:
+    url:
+        label: 'devmax.trackerclient::lang.url'
+        span: full
+        type: text
+    mod_url:
+        label: 'devmax.trackerclient::lang.url_mod'
+        span: full
+        dependsOn: {  }
+        type: text
+    uid:
+        label: 'devmax.trackerclient::lang.uid'
+        span: auto
+        disabled: 0
+        readOnly: 1
+        type: text
+    rating:
+        label: 'devmax.trackerclient::lang.rating'
+        span: auto
+        readOnly: 1
+        type: number
+    counts:
+        label: 'devmax.trackerclient::lang.counts'
+        span: auto
+        readOnly: 1
+        type: number
+    sucess_counts:
+        label: 'devmax.trackerclient::lang.success_counts'
+        span: auto
+        readOnly: 1
+        type: number
+    status:
+        label: Status
+        span: auto
+        default: 1
+        type: switch
+    updated_at:
+        label: 'devmax.trackerclient::lang.updated_at'
+        mode: datetime
+        span: auto
+        default: now
+        disabled: 1
+        readOnly: 1
+        type: datepicker
