@@ -25,11 +25,17 @@ class Sms extends Model
 
     public $belongsTo = [
         'clients' => [Clients::class, 'key' => 'client_id'],
+        'message' => [Message::class, 'key' => 'message_id'],
     ];
 
     public function client()
     {
         return $this->belongsTo('Devmax\TrackerClient\Models\Clients');
+    }
+
+    public function message()
+    {
+        return $this->belongsTo('Devmax\TrackerClient\Models\Message');
     }
 
     /**

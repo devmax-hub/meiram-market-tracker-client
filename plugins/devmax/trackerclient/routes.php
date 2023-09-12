@@ -14,10 +14,6 @@ use October\Rain\Exception\ValidationException;
 Route::prefix('api/v1')->group(function () {
   Route::post('client', [ClientController::class, 'client']);
 
-  Route::get('/exception', function () {
-    throw new ValidationException([
-      'something' => 'wrong',
-      'mode' => 'error',
-    ]);
-  });
+  Route::get('get-balance', [ClientController::class, 'getBalance']);
+
 });

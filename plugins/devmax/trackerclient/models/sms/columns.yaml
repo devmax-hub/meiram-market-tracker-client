@@ -24,6 +24,8 @@ columns:
         type: text
         searchable: true
         sortable: true
+        select: title
+        relation: message
     created_at:
         label: 'devmax.trackerclient::lang.clients.date'
         type: datetime
