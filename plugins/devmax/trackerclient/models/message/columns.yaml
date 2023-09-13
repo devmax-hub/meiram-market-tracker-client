@@ -1,9 +1,4 @@
 columns:
-    number:
-        label: 'Номер'
-        type: number
-        searchable: true
-        sortable: true
     title:
         label: 'devmax.trackerclient::lang.clients.title'
         type: text

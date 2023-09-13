@@ -2,6 +2,7 @@
 namespace Devmax\TrackerClient\Models;
 
 
+use Devmax\TrackerClient\Models\Message;
 use Model;
 
 /**

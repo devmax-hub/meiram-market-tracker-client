@@ -26,6 +26,7 @@ class Message extends Model
         'sms' => [Sms::class, 'key' => 'message_id'],
     ];
 
+
     /**
      * @var array rules for validation.
      */

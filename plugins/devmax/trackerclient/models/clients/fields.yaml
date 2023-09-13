@@ -1,11 +1,4 @@
 fields:
-    id:
-        label: Id
-        span: auto
-        preset:
-            field: id
-            type: ''
-        type: text
     created_at:
         label: 'devmax.trackerclient::lang.user.created_at'
         mode: datetime
@@ -43,8 +36,3 @@ fields:
         mode: datetime
         span: auto
         type: datepicker
-    sms:
-        label: 'devmax.trackerclient::lang.clients.sms'
-        span: auto
-        nameFrom: message
-        type: relation
