@@ -38,7 +38,23 @@ class ClientController extends Controller
     } catch (Exception $e) {
       echo "Ошибка: " . $e->getMessage() . "\n";
     }
+  }
 
 
+  public function sendSms(Request $request)
+  {
+    $data = $request->all();
+    $phone = $data['phone'];
+    $text = $data['message'];
+    $sender = "Meyram";
+
+
+    try {
+      // return response()->json(['tel' => $phone, 'text' => $text, $sender], 200);
+      $result = send_sms($phone, $text, 0, 0, 0, 0, $sender);
+      return response()->json(['result' => $result], 200);
+    } catch (Exception $e) {
+      echo "Ошибка: " . $e->getMessage() . "\n";
+    }
   }
 }

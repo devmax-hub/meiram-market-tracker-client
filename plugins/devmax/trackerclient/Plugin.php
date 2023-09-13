@@ -1,6 +1,7 @@
 <?php
 namespace Devmax\TrackerClient;
 
+use Backend;
 use Config;
 use Event;
 use Illuminate\Support\Facades\App;
@@ -46,7 +47,9 @@ class Plugin extends PluginBase
      */
     public function registerSettings()
     {
+
     }
+
 
     protected function applyAssets()
     {
