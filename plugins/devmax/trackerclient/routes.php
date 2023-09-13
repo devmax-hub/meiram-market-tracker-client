@@ -16,4 +16,6 @@ Route::prefix('api/v1')->group(function () {
 
   Route::get('get-balance', [ClientController::class, 'getBalance']);
 
+  Route::post('send-sms', [ClientController::class, 'sendSms']);
+
 });
