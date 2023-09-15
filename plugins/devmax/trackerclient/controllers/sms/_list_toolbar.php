@@ -12,7 +12,7 @@
 
     <button class="btn btn-primary oc-icon-plus" data-request="onHandleAction"
         data-request-data='{"action": "sendSms"}'>
-        Send SMS
+        Отправить СМС
     </button>
 
     <script>
