@@ -5,7 +5,7 @@ define("SMSC_LOGIN", "meyram"); // логин клиента
 define("SMSC_PASSWORD", "@Kuklabarbi1"); // пароль
 define("SMSC_POST", 0); // использовать метод POST
 define("SMSC_HTTPS", 0); // использовать HTTPS протокол
-define("SMSC_CHARSET", "windows-1251"); // кодировка сообщения: utf-8, koi8-r или windows-1251 (по умолчанию)
+define("SMSC_CHARSET", "utf-8"); // кодировка сообщения: utf-8, koi8-r или windows-1251 (по умолчанию)
 define("SMSC_DEBUG", 0); // флаг отладки
 define("SMTP_FROM", "api@smsc.kz"); // e-mail адрес отправителя
 
@@ -216,13 +216,15 @@ function _smsc_read_url($url, $files, $tm = 5)
 
         if (!$c) {
             $c = curl_init();
-            curl_setopt_array($c, array(
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_CONNECTTIMEOUT => $tm,
-                CURLOPT_TIMEOUT => 60,
-                CURLOPT_SSL_VERIFYPEER => 0,
-                CURLOPT_HTTPHEADER => array("Expect:")
-            )
+            curl_setopt_array(
+                $c,
+                array(
+                    CURLOPT_RETURNTRANSFER => true,
+                    CURLOPT_CONNECTTIMEOUT => $tm,
+                    CURLOPT_TIMEOUT => 60,
+                    CURLOPT_SSL_VERIFYPEER => 0,
+                    CURLOPT_HTTPHEADER => array("Expect:")
+                )
             );
         }
 
