@@ -1,10 +1,18 @@
 columns:
     id:
-        label: ID
+        label: 'devmax.trackerclient::lang.clients.id'
         type: number
         searchable: true
-        invisible: false
         sortable: true
+        width: 100px
+    client_id:
+        label: 'Client ID'
+        type: text
+        searchable: true
+        sortable: true
+        select: id
+        relation: clients
+        visible: false
     clients:
         label: 'devmax.trackerclient::lang.clients.name'
         type: text
@@ -12,6 +20,7 @@ columns:
         sortable: true
         select: name
         relation: clients
+        unique: true
     phone:
         label: 'devmax.trackerclient::lang.clients.phone'
         type: text
@@ -24,6 +33,8 @@ columns:
         type: text
         searchable: true
         sortable: true
+        select: title
+        relation: message
     created_at:
         label: 'devmax.trackerclient::lang.clients.date'
         type: datetime

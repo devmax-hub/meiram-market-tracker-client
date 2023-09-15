@@ -1,14 +1,12 @@
 <?php
 namespace Devmax\TrackerClient\Models;
 
-
-use Devmax\TrackerClient\Models\Message;
 use Model;
 
 /**
  * Model
  */
-class Clients extends Model
+class Message extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\SoftDelete;
@@ -21,16 +19,13 @@ class Clients extends Model
     /**
      * @var string table in the database used by the model.
      */
-    public $table = 'devmax_trackerclient_clients';
+    public $table = 'devmax_trackerclient_message';
 
 
     public $hasMany = [
-        'sms' => [Sms::class, 'key' => 'client_id'],
+        'sms' => [Sms::class, 'key' => 'message_id'],
     ];
-    public function sms()
-    {
-        return $this->hasMany('Devmax\TrackerClient\Models\Sms');
-    }
+
 
     /**
      * @var array rules for validation.

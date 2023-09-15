@@ -60,9 +60,6 @@ v1.0.20:
 v1.0.21:
     - 'Updated table devmax_trackerclient_clients'
     - builder_table_update_devmax_trackerclient_clients_2.php
-v1.0.22:
-    - 'Updated table devmax_trackerclient_sms'
-    - builder_table_update_devmax_trackerclient_sms_3.php
 v1.0.23:
     - 'Updated table devmax_trackerclient_sms'
     - builder_table_update_devmax_trackerclient_sms_4.php
@@ -72,12 +69,21 @@ v1.0.24:
 v1.0.25:
     - 'Updated table devmax_trackerclient_sms'
     - builder_table_update_devmax_trackerclient_sms_6.php
-v1.0.20:
-    - 'Updated table devmax_trackerclient_sms'
-    - builder_table_update_devmax_trackerclient_sms_7.php
-v1.0.21:
+v1.0.27:
     - 'Updated table devmax_trackerclient_sms'
     - builder_table_update_devmax_trackerclient_sms_8.php
-v1.0.22:
+v1.0.28:
     - 'Updated table devmax_trackerclient_clients'
     - builder_table_update_devmax_trackerclient_clients_3.php
+v1.0.29:
+    - 'Created table devmax_trackerclient_message'
+    - builder_table_create_devmax_trackerclient_message.php
+v1.0.30:
+    - 'Updated table devmax_trackerclient_sms'
+    - builder_table_update_devmax_trackerclient_sms_9.php
+v1.0.31:
+    - 'Updated table devmax_trackerclient_message'
+    - builder_table_update_devmax_trackerclient_message.php
+v1.0.32:
+    - 'Updated table devmax_trackerclient_message'
+    - builder_table_update_devmax_trackerclient_message_2.php

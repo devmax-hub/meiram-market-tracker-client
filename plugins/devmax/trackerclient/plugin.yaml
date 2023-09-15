@@ -24,6 +24,10 @@ navigation:
                 label: CMC
                 url: devmax/trackerclient/sms
                 icon: icon-comment-o
+            message:
+                label: 'devmax.trackerclient::lang.clients.message'
+                url: devmax/trackerclient/message
+                icon: icon-sitemap
     main-menu-settings:
         label: Настройка
         url: /
