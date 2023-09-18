@@ -28,6 +28,15 @@ class Plugin extends PluginBase
         if ($this->app->runningInBackend()) {
             $this->applyAssets();
         }
+        Event::listen('backend.menu.extendItems', function($manager) {
+            $manager->removeMainMenuItem('October.Backend','dashboard');
+            $manager->removeMainMenuItem('October.Editor','editor');
+            $manager->removeMainMenuItem('October.Media','media');
+
+            if(!\BackendAuth::getUser()->id == 1){
+                $manager->removeMainMenuItem('Rainlab.Builder', 'builder');
+            }
+        });
     }
 
     /**
