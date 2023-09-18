@@ -9,6 +9,7 @@ class RefersLinks extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\SoftDelete;
+
     public $suger = 'meyram';
     public $_uid = null;
 
@@ -27,7 +28,7 @@ class RefersLinks extends Model
      * @var array rules for validation.
      */
     public $rules = [
-        'url'=>[
+        'url' => [
             'required',
             'url'
         ],
@@ -38,22 +39,26 @@ class RefersLinks extends Model
         'url.min' => 'Поле URL должно быть не менее 10 символов',
         'url.max' => 'Поле URL должно быть не более 255 символов',
     ];
+
     /***
      * set Atrribute for uid
      */
-    public function setModUrlAttribute($value){
+    public function setModUrlAttribute($value)
+    {
         // check if url has already uid then don't generate new one
         if (strpos($value, 'utm_track_uid') !== false) {
             $this->attributes['mod_url'] = $value;
             return;
         }
-        $this->attributes['mod_url'] = $this->url.'&utm_track_uid='.$this->generateUid();
+        $this->attributes['mod_url'] = $this->url . '&utm_track_uid=' . $this->generateUid();
 
     }
-    public function setUidAttribute($value){
-        if($value){
+
+    public function setUidAttribute($value)
+    {
+        if ($value) {
             $this->attributes['uid'] = $value;
-        }else{
+        } else {
             $this->attributes['uid'] = $this->generateUid();
         }
     }
@@ -61,11 +66,23 @@ class RefersLinks extends Model
     /**
      * generate from timestamp uid
      */
-    public function generateUid(){
+    public function generateUid()
+    {
         $time = time();
-        $uid = md5($time.$this->suger);
+        $uid = md5($time . $this->suger);
         // return only 6 symbols
         return substr($uid, 0, 6);
+    }
+
+    public $belongsTo = [
+        'user' => ['RainLab\User\Models\User', 'key' => 'user_id'],
+    ];
+
+    /**
+     * Fill user_id when create new record
+     */
+    public function beforeCreate(){
+        $this->user_id = \BackendAuth::getUser()->id;
     }
 
 }
