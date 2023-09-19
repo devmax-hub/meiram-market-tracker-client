@@ -1,16 +1,12 @@
 fields:
     created_at:
-        label: 'devmax.trackerclient::lang.user.created_at'
+        label: 'devmax.trackerclient::lang.created_at'
         mode: datetime
         span: auto
+        default: now
         type: datepicker
     updated_at:
-        label: 'devmax.trackerclient::lang.import_export.updated'
-        mode: datetime
-        span: auto
-        type: datepicker
-    deleted_at:
-        label: 'devmax.trackerclient::lang.user.deleted_at'
+        label: 'devmax.trackerclient::lang.clients.updated_at'
         mode: datetime
         span: auto
         type: datepicker
