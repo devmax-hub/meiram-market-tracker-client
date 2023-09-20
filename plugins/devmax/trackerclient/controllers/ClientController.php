@@ -23,6 +23,10 @@ class ClientController extends Controller
         $client = new Clients;
         $client_phone = $client->where('phone', $data['phone'])->first();
         \Log::info(['client phone', $data['phone']]);
+        $refer_links = new RefersLinks;
+        // if utm_track_uid has exists in table refers_links then +1 to refers_links.count
+        $refer_link = $refer_links->where('uid', $data['utm_track_uid'])->first();
+        if(!$refer_link) return response()->json(['message' => 'This utm_track_uid not found'], 200);
         if (!$client_phone) {
             $client->name = $data['name'];
             $client->phone = $data['phone'];
@@ -31,10 +35,9 @@ class ClientController extends Controller
         } elseif ($client_phone->created_at->format('Y-m-d') == date('Y-m-d')) {
             return response()->json(['message' => 'This phone registered today'], 200);
         }
-        $refer_links = new RefersLinks;
-        // if utm_track_uid has exists in table refers_links then +1 to refers_links.count
-        $refer_link = $refer_links->where('uid', $data['utm_track_uid'])->first();
+
         $time = date("Y-m-d H:i:s");
+
         \Log::info([$time, $data['phone'], $refer_link->id, $refer_link->uid, $refer_link->counts]);
         // if phone number different from phone number in table clients then +1 to refers.count
         $client_phone = $client->where('phone', $data['phone'])->first();
