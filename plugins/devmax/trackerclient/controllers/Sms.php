@@ -8,6 +8,7 @@ use Backend;
 use BackendMenu;
 use Backend\Classes\Controller;
 use Devmax\TrackerClient\Models\Clients;
+use Devmax\TrackerClient\Models\Links;
 use Exception;
 use Flash;
 use Illuminate\Http\Request;
@@ -47,7 +48,8 @@ class Sms extends Controller
                 $sender = "Meyram";
 
                 foreach ($smsArray as $sms) {
-                    $text = $sms->message ? $sms->message->text : "";
+                    $link = $this->generateLink($sms->client_id);
+                    $text = $sms->message ? $sms->message->text . " силтеме: " . $link : "";
                     $phone = $sms->client->phone;
 
                     $result = send_sms($phone, $text, 0, 0, 0, 0, $sender);
@@ -72,5 +74,34 @@ class Sms extends Controller
             Flash::warning('Не выбраны клиенты для отправки SMS.');
         }
         return $this->listRefresh();
+    }
+
+
+    public function generateLink($id)
+    {
+        $time = time();
+        $uid_link = substr(md5($time . 'meyram'), 0, 6);
+        $attempt = 1;
+        $url = 'https://meyram-app.kz/l/';
+
+        do {
+            $link = Links::where('link', $uid_link)->first();
+            if (!$link) {
+                $newLink = new Links;
+                $newLink->client_id = $id;
+                $newLink->link = $uid_link;
+                $newLink->save();
+                break;
+            }
+
+            $uid_link = substr(md5($time . 'meyram'), 0, 6);
+            $attempt++;
+
+            if ($attempt > 20) {
+                $uid_link = substr(md5($time . 'meyram'), 4, 6);
+            }
+        }
+        while (true);
+        return $url . $uid_link;
     }
 }
