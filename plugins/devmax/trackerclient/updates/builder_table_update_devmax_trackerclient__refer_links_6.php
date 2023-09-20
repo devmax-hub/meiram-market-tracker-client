@@ -12,7 +12,7 @@ class BuilderTableUpdateDevmaxTrackerclientReferLinks5 extends Migration
             $table->integer('user_id')->nullable();
         });
     }
-    
+
     public function down()
     {
         Schema::table('devmax_trackerclient__refer_links', function($table)

@@ -87,3 +87,6 @@ v1.0.31:
 v1.0.32:
     - 'Updated table devmax_trackerclient_message'
     - builder_table_update_devmax_trackerclient_message_2.php
+v1.0.33:
+    - 'Updated table devmax_trackerclient__refer_links'
+    - builder_table_update_devmax_trackerclient__refer_links_6.php
