@@ -7,3 +7,7 @@ fields:
         label: 'devmax.trackerclient::lang.clients.message'
         span: auto
         type: text
+    url_bizon:
+        label: Bizon
+        span: auto
+        type: text

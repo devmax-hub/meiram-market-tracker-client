@@ -9,3 +9,8 @@ columns:
         type: text
         searchable: true
         sortable: true
+    url_bizon:
+        label: Bizon
+        type: text
+        searchable: true
+        sortable: true
