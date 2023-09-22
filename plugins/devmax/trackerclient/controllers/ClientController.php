@@ -10,14 +10,16 @@ use Devmax\TrackerClient\Models\Clients;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Log;
 
 
 class ClientController extends Controller
 {
   public function client(Request $request)
   {
-    $data = $request->all();
 
+    $data = $request->all();
+    // return response()->json(['data' => "$data"], 200);
 
     $client = new Clients;
     $client->name = $data['name'];
