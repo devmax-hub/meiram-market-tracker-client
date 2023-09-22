@@ -17,8 +17,10 @@ class ClientController extends Controller
 {
     public function client(Request $request)
     {
-        $data = $request->all();
-
+        $data = file_get_contents('php://input');
+        if(!$data) return ;
+        $data = json_decode($data, true);
+        \Log::info(['client data', $data]);
         // check first phone number in table clients if exists then +1 once in one day
         $client = new Clients;
         $client_phone = $client->where('phone', $data['phone'])->first();
