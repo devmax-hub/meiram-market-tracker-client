@@ -68,10 +68,10 @@ class Sms extends Controller
             if (!empty($sentIds)) {
                 Flash::success('SMS успешно отправлены клиентам с ID: ' . implode(', ', $sentIds));
             } else {
-                Flash::warning('SMS не были отправлены ни одному клиенту.');
+                // Flash::warning('SMS не были отправлены ни одному клиенту.');
             }
         } else {
-            Flash::warning('Не выбраны клиенты для отправки SMS.');
+            // Flash::warning('Не выбраны клиенты для отправки SMS.');
         }
         return $this->listRefresh();
     }
