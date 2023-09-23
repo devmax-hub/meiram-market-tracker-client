@@ -69,36 +69,33 @@ v1.0.24:
 v1.0.25:
     - 'Updated table devmax_trackerclient_sms'
     - builder_table_update_devmax_trackerclient_sms_6.php
-v1.0.27:
+v1.0.28:
     - 'Updated table devmax_trackerclient_sms'
     - builder_table_update_devmax_trackerclient_sms_8.php
-v1.0.28:
+v1.0.29:
     - 'Updated table devmax_trackerclient_clients'
     - builder_table_update_devmax_trackerclient_clients_3.php
-v1.0.29:
+v1.0.30:
     - 'Created table devmax_trackerclient_message'
     - builder_table_create_devmax_trackerclient_message.php
-v1.0.30:
+v1.0.31:
     - 'Updated table devmax_trackerclient_sms'
     - builder_table_update_devmax_trackerclient_sms_9.php
-v1.0.31:
-    - 'Updated table devmax_trackerclient_message'
-    - builder_table_update_devmax_trackerclient_message.php
 v1.0.32:
     - 'Updated table devmax_trackerclient_message'
+    - builder_table_update_devmax_trackerclient_message.php
+v1.0.33:
+    - 'Updated table devmax_trackerclient_message'
     - builder_table_update_devmax_trackerclient_message_2.php
-v1.0.27:
+v1.0.34:
     - 'Updated table devmax_trackerclient_message'
     - builder_table_update_devmax_trackerclient_message_3.php
-v1.0.28:
+v1.0.35:
     - 'Created table devmax_trackerclient_link'
     - builder_table_create_devmax_trackerclient_link.php
-v1.0.29:
-    - 'Created table devmax_trackerclient_link'
-    - builder_table_create_devmax_trackerclient_link_2.php
-v1.0.30:
+v1.0.36:
     - 'Updated table devmax_trackerclient_link'
     - builder_table_update_devmax_trackerclient_link.php
-v1.0.33:
+v1.0.37:
     - 'Updated table devmax_trackerclient__refer_links'
     - builder_table_update_devmax_trackerclient__refer_links_6.php
