@@ -9,8 +9,6 @@ use Devmax\TrackerClient\Models\Clients;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Devmax\TrackerClient\Models\RefersLinks;
-use Devmax\TrackerClient\Models\Refers;
 
 
 class ClientController extends Controller
