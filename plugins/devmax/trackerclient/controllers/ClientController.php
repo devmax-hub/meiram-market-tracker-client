@@ -6,10 +6,10 @@ namespace Devmax\TrackerClient\Controllers;
 include_once "smsc_api.php";
 
 use Devmax\TrackerClient\Models\Clients;
+use Devmax\TrackerClient\Models\RefersLinks;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-
 
 class ClientController extends Controller
 {
