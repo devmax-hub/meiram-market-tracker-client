@@ -33,6 +33,10 @@ navigation:
         url: /devmax/trackerclient/refersLinks
         icon: icon-chain
         order: ''
+    main-menu-users:
+        label: Пользователи
+        url: backend/users
+        icon: icon-users
 permissions:
     devmax.trackerclient.refers:
         tab: Реферы
