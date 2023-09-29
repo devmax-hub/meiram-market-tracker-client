@@ -17,7 +17,6 @@ class CustomSkin extends BackendSkin
      */
     public function getLayoutPaths()
     {
-        Log::info(['test skin', $this->skinPath]);
         return [
             plugins_path('/devmax/trackerclient/skin/layouts'),
             $this->skinPath . '/layouts'

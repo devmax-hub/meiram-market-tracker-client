@@ -24,7 +24,7 @@ fields:
         span: auto
         readOnly: 1
         type: number
-    sucess_counts:
+    success_counts:
         label: 'devmax.trackerclient::lang.success_counts'
         span: auto
         readOnly: 1

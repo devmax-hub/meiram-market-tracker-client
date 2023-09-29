@@ -27,7 +27,7 @@ columns:
         type: number
         searchable: true
         sortable: true
-    sucess_counts:
+    success_counts:
         label: 'devmax.trackerclient::lang.success_counts'
         type: number
         searchable: true
